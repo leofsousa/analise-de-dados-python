@@ -27,10 +27,10 @@ else:
 
 #decisão do filme escolhido
 
-decisao = str(input('Digite o número do filme escolhido:'))
+decisao = int(input('Digite o número do filme escolhido:'))
 print(f' O filme escolhido foi o filme {decisao}, vamos verificar se há ingressos disponíveis, um momento...')
 print('Verificando, só mais um momento...')
-time.sleep(10)
+time.sleep(2)
 
 
 #Verifica disponibilidade de ingressos:
@@ -38,8 +38,19 @@ time.sleep(10)
 quantidade_ingressosf1 = 10
 quantidade_ingressosf2 = 6
 quantidade_ingressosf3 = 5
+
 if decisao == 1:
     if quantidade_ingressosf1 > 0:
         print(f'Essa sessão tem {quantidade_ingressosf1} ingressos disponíveis, divirta-se!)')
+    else:
+        print(f'Sentimos muito, os ingressos para essa sessão estão esgotados')
+if decisao == 2:
+    if quantidade_ingressosf2 > 0:
+        print(f'Essa sessão tem {quantidade_ingressosf2} ingressos disponíveis, divirta-se!)')
+    else:
+        print(f'Sentimos muito, os ingressos para essa sessão estão esgotados')
+if decisao == 3:
+    if quantidade_ingressosf3 > 0:
+        print(f'Essa sessão tem {quantidade_ingressosf3} ingressos disponíveis, divirta-se!)')
     else:
         print(f'Sentimos muito, os ingressos para essa sessão estão esgotados')
