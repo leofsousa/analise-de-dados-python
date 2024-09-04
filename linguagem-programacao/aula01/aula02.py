@@ -29,8 +29,9 @@ else:
 
 decisao = int(input('Digite o número do filme escolhido:'))
 print(f' O filme escolhido foi o filme {decisao}, vamos verificar se há ingressos disponíveis, um momento...')
-print('Verificando, só mais um momento...')
 time.sleep(2)
+print('Verificando, só mais um momento...')
+time.sleep(3)
 
 
 #Verifica disponibilidade de ingressos:
