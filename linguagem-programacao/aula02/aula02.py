@@ -14,3 +14,10 @@ else:
 
 meu_conjunto.remove(elemento)
 print(f'Meu conjunto após remover o elemento {elemento}: ' , meu_conjunto)
+
+#Criação de dicionários
+
+dici_1 = {}
+dici_1['nome'] = 'Maria'
+dici_1['idade'] = 25
+print(dici_1)
