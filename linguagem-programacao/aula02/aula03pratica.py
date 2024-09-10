@@ -18,4 +18,25 @@ class Carro(Veiculo):
     def __init__(self, marca, modelo, ano, potencia):
         super().__init__(marca, modelo, ano)
         self.potencia = potencia
-    
+    def acelerar(self, incremento):
+        self.velocidade += incremento + self.potencia
+
+class Bicicleta(Veiculo):
+    def __init__(self, marca, modelo, ano, tipo):
+        super().__init__(marca, modelo, ano)
+        self.tipo = tipo
+    def status(self):
+        return f'Marca: {self.marca}, Ano: {self.ano}, Tipo: {self.tipo}, Velocidade: {self.velocidade} km/h'
+
+#Criando Objetos
+carro1 = Carro('Volkswagen', 'Virtus', 2024, 130)
+bicicleta1 = Bicicleta('Trek', 'Mountain Bike', 2021, 'MTB')
+
+carro1.acelerar(50)
+bicicleta1.acelerar(20)
+
+print(f'Status do carro: ')
+print(carro1.status())
+
+print("Status da Bicicleta: ")
+print(bicicleta1.status())
