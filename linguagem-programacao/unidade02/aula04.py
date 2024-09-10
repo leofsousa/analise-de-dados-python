@@ -1,4 +1,14 @@
-import math
-num = 25
-num = math.sqrt(num)
-print(num)
+import matplotlib.pyplot as plt
+
+# Dados
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 1, 3, 5]
+
+# Criando um Gráfico
+
+plt.plot(x, y)
+
+plt.xlabel('Eixo X')
+plt.ylabel('Eixo Y')
+
+plt.show()
