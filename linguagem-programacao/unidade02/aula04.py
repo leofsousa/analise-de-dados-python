@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt # type: ignore
 
 # Dados
 x = [1, 2, 3, 4, 5]
